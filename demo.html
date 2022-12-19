@@ -377,12 +377,42 @@
           </div>
           <div class="container designer_part">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="position-relative col-lg-6">
+                <div class="years yearsm position-absolute">
+                  <h3>
+                    <span>18</span>
+                  </h3>
+                  <span class="succesyer"
+                    >Years of <br />
+                    Success</span
+                  >
+                </div>
+                <div class="totalp years position-absolute">
+                  <h3>
+                    <span>9k</span>
+                  </h3>
+                  <span class="succesyer"
+                    >Total <br />
+                    Projects</span
+                  >
+                </div>
                 <img
                   src="https://marketifythemes.net/html/dizme/img/about/2.jpg"
                   alt=""
                   class="img-fluid"
                 />
+              </div>
+              <div class="years aboutrecm position-absolute col-12">
+                <h3>
+                  <span>18</span>
+                </h3>
+                <span class="succesyer">Years of Success</span>
+              </div>
+              <div class="totalp aboutrecm years position-absolute col-12">
+                <h3>
+                  <span>9k</span>
+                </h3>
+                <span class="succesyer">Total Projects</span>
               </div>
               <div class="col-lg-6 pt-5 pb-5 mt-5 mb-5">
                 <h5>I'm a Designer</h5>
@@ -409,9 +439,135 @@
       <!-- About Section End -->
 
       <!-- Portfolio Section Start -->
-      <div id="portfolio" class="container-fluid section">
-        <div class="container"></div>
+      <div id="portfolio" class="container-fluid myback2">
+        <div class="container">
+          <div class="portfolio_title text-center pt-5">
+            <span>Portfolio</span>
+            <h3>My Amazing Works</h3>
+            <p>
+              Most common methods for designing websites that work well on
+              desktop is responsive and adaptive design
+            </p>
+          </div>
+          <div class="work_gallery pt-5 pb-5">
+            <ul
+              id="filters"
+              class="d-flex justify-content-center align-items-center"
+            >
+              <li class="filter activess" onclick="filterSelection('all')">
+                All
+              </li>
+              <li class="filter" onclick="filterSelection('YouTube')">
+                YouTube
+              </li>
+              <li class="filter" onclick="filterSelection('Vimeo')">Vimeo</li>
+              <li class="filter" onclick="filterSelection('Soundcloud')">
+                Soundcloud
+              </li>
+              <li class="filter" onclick="filterSelection('Popup')">Popup</li>
+              <li class="filter" onclick="filterSelection('Deatail')">
+                Deatail
+              </li>
+            </ul>
+          </div>
+          <div class="work_gallery_items row">
+            <div class="col-lg-4 filterDiv YouTube Popup">
+              <div class="col-lg-12 filterDiv YouTube">
+                <img
+                  src="https://marketifythemes.net/html/dizme/img/portfolio/1.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-lg-12 filterDiv Popup">
+                <img
+                  src="https://marketifythemes.net/html/dizme/img/portfolio/4.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 filterDiv Vimeo Popup">
+              <div class="col-lg-12 filterDiv Vimeo">
+                <img
+                  src="https://marketifythemes.net/html/dizme/img/portfolio/2.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-lg-12 Popup filterDiv">
+                <img
+                  src="https://marketifythemes.net/html/dizme/img/portfolio/5.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 filterDiv Soundcloud Deatail">
+              <div class="col-lg-12 filterDiv Soundcloud">
+                <img
+                  src="https://marketifythemes.net/html/dizme/img/portfolio/3.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-lg-12 filterDiv Deatail">
+                <img
+                  src="https://marketifythemes.net/html/dizme/img/portfolio/6.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <script>
+        filterSelection("all");
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+              element.className += " " + arr2[i];
+            }
+          }
+        }
+
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("filters");
+        var btns = btnContainer.getElementsByClassName("filter");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("activess");
+            current[0].className = current[0].className.replace("activess", "");
+            this.className += " activess";
+          });
+        }
+      </script>
 
       <!-- Portfolio Section End -->
 
