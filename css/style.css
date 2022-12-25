@@ -758,6 +758,179 @@ body {
   border-bottom: none;
 }
 /* Service Section End */
+
+/* Blog section start */
+.myblog_title {
+  padding: 150px 0;
+}
+.myblog_title span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #f75023;
+  font-family: Jost, sans-serif;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.myblog_title h3 {
+  font-size: 48px;
+  line-height: 1.25;
+  margin-bottom: 23px;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.myblog_card {
+  transition: all 0.25s ease;
+}
+.mbl_img {
+  overflow: hidden;
+  line-height: 0;
+  border-radius: 12px;
+}
+.mbl_img img {
+  transition: all 0.3s ease;
+}
+.mbl_img img:hover {
+  transform: scale(1.1);
+}
+.mybl_details span {
+  font-size: 16px;
+  color: #f75023;
+  font-family: Jost, sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 2px;
+}
+.mybl_details h3 {
+  font-size: 21px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+.mybl_date {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+  display: inline-block;
+  background-color: #1cbe59;
+  border-radius: 12px;
+  text-align: center;
+  padding: 13px 19px 12px 19px;
+  line-height: 1;
+  color: #fff;
+}
+.myblog_subs {
+  position: relative;
+  z-index: 0;
+  margin-top: 130px;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://dizme-vue.vercel.app/img/subscribe/dots.jpg");
+  background-size: cover;
+  padding: 83px 90px 86px 90px;
+  border-radius: 13px;
+}
+.myblog_subs::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(128, 103, 240, 0.92);
+  border-radius: 13px;
+}
+.subs_title span {
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 500;
+  color: #fff;
+  font-family: Jost, sans-serif;
+  margin-bottom: 5px;
+}
+.subs_title h3 {
+  word-wrap: break-word;
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.subs_title p {
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0;
+  word-wrap: break-word;
+  font-weight: 400;
+  color: #fff;
+}
+.subs_mail {
+  width: 100%;
+  height: 72px;
+  border-radius: 12px 0 0 12px;
+  color: #6f6b80;
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 100px;
+  border: none;
+}
+.subs_submit {
+  height: 72px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #fff;
+  font-family: Jost, sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+  background-color: #f75023;
+  padding: 0 35px;
+  border: none;
+}
+/* Blog section end */
+
+/* Contact section start */
+.contact_title {
+  padding-top: 130px;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0;
+  word-wrap: break-word;
+  font-weight: 400;
+  width: 100%;
+
+  height: auto;
+  clear: both;
+}
+.contact_title span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #f75023;
+  font-family: Jost, sans-serif;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.contact_title h3 {
+  font-size: 48px;
+  line-height: 1.25;
+  margin-bottom: 23px;
+  color: #fff;
+}
+.contact_title p {
+  color: #b9b5c9;
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Contact section end */
+
 @media only screen and (max-width: 1399px) {
   .home_introduce button {
     width: 150px;
