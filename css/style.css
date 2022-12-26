@@ -344,6 +344,24 @@ body {
   min-height: calc(50% - 15px);
   margin: 50px 0;
 }
+.myicon_about span {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.myicon_about img {
+  vertical-align: middle;
+  max-width: 125px;
+  position: relative;
+}
+.myicon_about svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+}
 
 .feature-1 h3 {
   color: #fff;
@@ -353,6 +371,28 @@ body {
 .feature-1 p {
   font-size: 16px;
   color: #b9b5c9;
+}
+.brush1 {
+  position: absolute;
+  left: -79px;
+  top: -204px;
+}
+.brush2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.brush3 {
+  position: absolute;
+  left: 30px;
+  bottom: -167px;
+  z-index: 3;
+}
+.brush4 {
+  position: absolute;
+  top: 860px;
+  right: 40px;
+  z-index: -1;
 }
 .designer_part button {
   color: #fff;
@@ -466,15 +506,34 @@ body {
 .galerry_img:hover {
   scale: 1.2;
 }
+.myskills {
+  padding-top: 180px;
+  padding-bottom: 240px;
+}
 
+.brush5 {
+  position: absolute;
+  right: 0;
+  bottom: -9px;
+}
+.brush6 {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+.brush7 {
+  position: absolute;
+  right: 20px;
+  top: 1000px;
+}
 .show {
   display: block;
   float: left;
-  animation: huy 0.5s;
+  animation: show 0.5s;
   transition: 0.5s;
 }
 
-@keyframes huy {
+@keyframes show {
   0% {
     position: relative;
     left: 30px;
@@ -1022,6 +1081,58 @@ body {
   color: #fff;
   border-color: #f75023;
 }
+
+.dizme_tm_copyright {
+  background-color: #3f4453;
+}
+.copyright_data {
+  padding: 57px 0 61px 0;
+}
+.develop_data p {
+  line-height: 30px;
+  letter-spacing: 0;
+  word-wrap: break-word;
+  font-weight: 400;
+  color: #b9b5c9;
+  font-size: 16px;
+}
+.develop_data p a {
+  transition: all 0.3s ease;
+  font-weight: 700;
+  text-decoration: none;
+  color: #b9b5c9;
+}
+.develop_data p a:hover {
+  color: #f75023;
+}
+.terms_data ul {
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0;
+  word-wrap: break-word;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.terms_data ul li {
+  margin: 0 42px 0 0;
+  display: inline-block;
+}
+.terms_data ul li:last-child {
+  margin-right: 0;
+}
+.terms_data ul li a {
+  color: #b9b5c9;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.terms_data ul li a:hover {
+  color: #f75023;
+}
 /* Contact section end */
 
 @media only screen and (max-width: 1399px) {
@@ -1113,12 +1224,21 @@ body {
     padding: 25px 30px 21px 26px;
     margin: 10px 0;
   }
+  .copyright_data {
+    flex-direction: column;
+  }
   .years {
     display: none;
   }
   .pshop-l {
     left: 250px !important;
     animation-name: pshop-2 !important;
+  }
+  .service_icon {
+    display: none;
+  }
+  .services_card {
+    padding: 65px !important;
   }
 
   @keyframes pshop-2 {
