@@ -491,8 +491,11 @@ body {
 }
 .work_gallery_items img {
   border-radius: 12px;
-  margin: 12px 0;
+
   transition: 0.5s;
+}
+.img_item {
+  margin: 12px 0;
 }
 
 .filterDiv {
@@ -507,8 +510,8 @@ body {
   scale: 1.2;
 }
 .myskills {
-  padding-top: 180px;
-  padding-bottom: 240px;
+  padding-top: 140px;
+  padding-bottom: 200px;
 }
 
 .brush5 {
@@ -616,6 +619,226 @@ body {
 /* Portfolio Part End */
 
 /* Service Section Start */
+.person_icon_1 {
+  position: absolute;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 70px;
+  height: 70px;
+  background-image: url(https://dizme-vue.vercel.app/img/testimonials/1.jpg);
+  top: 1500px;
+  left: 160px;
+  animation-name: usericon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.person_icon_2 {
+  background-image: url(https://dizme-vue.vercel.app/img/testimonials/2.jpg);
+  position: absolute;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 55px;
+  height: 55px;
+  top: 1700px;
+  left: 50px;
+  animation-name: usericon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.person_icon_3 {
+  background-image: url(https://dizme-vue.vercel.app/img/testimonials/3.jpg);
+  position: absolute;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 60px;
+  height: 60px;
+  top: 1630px;
+  left: 290px;
+  animation-name: usericon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.person_icon_4 {
+  background-image: url(https://dizme-vue.vercel.app/img/testimonials/4.jpg);
+  position: absolute;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 35px;
+  height: 35px;
+  top: 1790px;
+  left: 290px;
+  animation-name: usericon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.person_icon_5 {
+  background-image: url(https://dizme-vue.vercel.app/img/testimonials/5.jpg);
+  position: absolute;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 49px;
+  height: 49px;
+  top: 1630px;
+  right: 30px;
+  animation-name: usericon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.person_icon_6 {
+  background-image: url(https://dizme-vue.vercel.app/img/testimonials/6.jpg);
+  position: absolute;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 79px;
+  height: 79px;
+  top: 1670px;
+  right: 290px;
+  animation-name: usericon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.person_icon_7 {
+  background-image: url(https://dizme-vue.vercel.app/img/testimonials/7.jpg);
+  position: absolute;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 58px;
+  height: 58px;
+  top: 1500px;
+  right: 160px;
+  animation-name: usericon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.decor_icon_1 {
+  border: 4px solid #6e50f0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  display: inline-block;
+  top: 1560px;
+  left: 280px;
+  border-radius: 100%;
+  animation-name: decoricon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.decor_icon_2 {
+  background-color: #1cbe59;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 100%;
+  top: 1600px;
+  left: 80px;
+  animation-name: decoricon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.decor_icon_3 {
+  background-color: #f0c45c;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 100%;
+  top: 1741px;
+  left: 174px;
+  animation-name: decoricon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.decor_icon_4 {
+  background-color: #f0c45c;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  border-radius: 100%;
+  top: 1481px;
+  right: 329px;
+  animation-name: decoricon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.decor_icon_5 {
+  border: 6px solid #1cbe59;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  display: inline-block;
+  border-radius: 100%;
+  top: 1612px;
+  right: 180px;
+  animation-name: decoricon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.decor_icon_6 {
+  background-color: #8067f0;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  border-radius: 100%;
+  top: 1781px;
+  right: 119px;
+  animation-name: decoricon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.brush8 {
+  position: absolute;
+  bottom: 147px;
+  left: 0;
+  z-index: -1;
+}
+
+@keyframes usericon {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+@keyframes decoricon {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
 .servises_title {
   text-align: center;
 }
@@ -819,6 +1042,18 @@ body {
 /* Service Section End */
 
 /* Blog section start */
+.brush9 {
+  position: absolute;
+  top: -36px;
+  right: 0px;
+  z-index: -1;
+}
+.brush10 {
+  position: absolute;
+  top: 245px;
+  left: 130px;
+  z-index: -2;
+}
 .myblog_title {
   padding: 150px 0;
 }
@@ -954,6 +1189,16 @@ body {
 /* Blog section end */
 
 /* Contact section start */
+.brush11 {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+.brush12 {
+  position: absolute;
+  top: 900px;
+  right: 0px;
+}
 .contact_title {
   padding-top: 130px;
   font-family: Open Sans, sans-serif;
@@ -1216,6 +1461,12 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+  .web_decor {
+    display: none;
+  }
+  .img_item {
+    margin: 12px 79px;
+  }
   .aboutrecm {
     display: block !important;
     position: static !important;
@@ -1329,5 +1580,8 @@ body {
   }
   .work_gallery ul {
     font-size: 13px;
+  }
+  .img_item {
+    margin: 12px 0;
   }
 }
