@@ -199,7 +199,7 @@ body {
 
 /* NAV_BAR END */
 .mybackhome {
-  background-image: url(https://marketifythemes.net/html/dizme/img/slider/2.jpg);
+  background-image: url(../img/background_home.jpg);
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -627,7 +627,7 @@ body {
   background-position: 50%;
   width: 70px;
   height: 70px;
-  background-image: url(https://dizme-vue.vercel.app/img/testimonials/1.jpg);
+  background-image: url(../img/tetka1.jpg);
   top: 1500px;
   left: 160px;
   animation-name: usericon;
@@ -636,7 +636,7 @@ body {
   animation-direction: alternate;
 }
 .person_icon_2 {
-  background-image: url(https://dizme-vue.vercel.app/img/testimonials/2.jpg);
+  background-image: url(../img/tetka2.jpg);
   position: absolute;
   border-radius: 100%;
   background-repeat: no-repeat;
@@ -652,7 +652,7 @@ body {
   animation-direction: alternate;
 }
 .person_icon_3 {
-  background-image: url(https://dizme-vue.vercel.app/img/testimonials/3.jpg);
+  background-image: url(../img/tetka3.jpg);
   position: absolute;
   border-radius: 100%;
   background-repeat: no-repeat;
@@ -668,7 +668,7 @@ body {
   animation-direction: alternate;
 }
 .person_icon_4 {
-  background-image: url(https://dizme-vue.vercel.app/img/testimonials/4.jpg);
+  background-image: url(../img/tetka4.jpg);
   position: absolute;
   border-radius: 100%;
   background-repeat: no-repeat;
@@ -684,7 +684,7 @@ body {
   animation-direction: alternate;
 }
 .person_icon_5 {
-  background-image: url(https://dizme-vue.vercel.app/img/testimonials/5.jpg);
+  background-image: url(../img/tetka5.jpg);
   position: absolute;
   border-radius: 100%;
   background-repeat: no-repeat;
@@ -700,7 +700,7 @@ body {
   animation-direction: alternate;
 }
 .person_icon_6 {
-  background-image: url(https://dizme-vue.vercel.app/img/testimonials/6.jpg);
+  background-image: url(../img/tetka6.jpg);
   position: absolute;
   border-radius: 100%;
   background-repeat: no-repeat;
@@ -716,7 +716,7 @@ body {
   animation-direction: alternate;
 }
 .person_icon_7 {
-  background-image: url(https://dizme-vue.vercel.app/img/testimonials/7.jpg);
+  background-image: url(../img/tetka7.jpg);
   position: absolute;
   border-radius: 100%;
   background-repeat: no-repeat;
@@ -1124,7 +1124,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("https://dizme-vue.vercel.app/img/subscribe/dots.jpg");
+  background-image: url("../img/dots.jpg");
   background-size: cover;
   padding: 83px 90px 86px 90px;
   border-radius: 13px;
